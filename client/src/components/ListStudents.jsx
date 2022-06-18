@@ -66,7 +66,8 @@ const ListStudents = () => {
                             <td >{student.fname}</td>
                             <td >{student.minit}</td>
                             <td >{student.lname}</td>
-                            <td >{student.dob}</td>
+                            <td >{new Date(student.dob).toISOString().slice(0, 10).split("-").reverse().join("-")
+                            }</td>
                             <td >{student.addr}</td>
                             <td >{student.sex}</td>
                             <td >{student.email}</td>

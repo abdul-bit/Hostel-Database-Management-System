@@ -55,6 +55,7 @@ app.delete("/employees/delete/:aadhaar", async (req, res) => {
 
     } catch (err) {
         console.error(err);
+        prompt(err);
 
     }
 })

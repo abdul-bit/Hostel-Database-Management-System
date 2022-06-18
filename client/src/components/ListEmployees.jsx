@@ -8,6 +8,7 @@ const deleteEmployee = async (aadhaar) => {
     } catch (err) {
         console.error(err);
 
+
     }
 }
 
@@ -64,7 +65,8 @@ const ListEmployees = () => {
                             <td >{employee.fname}</td>
                             <td >{employee.minit}</td>
                             <td >{employee.lname}</td>
-                            <td >{employee.dob}</td>
+                            <td >{new Date(employee.dob).toISOString().slice(0, 10).split("-").reverse().join("-")
+                            }</td>
                             <td >{employee.addr}</td>
                             <td >{employee.sex}</td>
                             <td >{employee.salary}</td>
