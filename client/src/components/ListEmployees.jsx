@@ -7,6 +7,7 @@ const deleteEmployee = async (aadhaar) => {
         window.location.reload(true);
     } catch (err) {
         console.error(err);
+        prompt(err);
 
 
     }
@@ -27,6 +28,7 @@ const ListEmployees = () => {
 
         } catch (err) {
             console.log(err)
+            prompt(err);
 
         }
 

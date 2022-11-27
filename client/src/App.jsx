@@ -16,7 +16,6 @@ const App = () => {
     return (
         <StudentsContextProvider>
             <div >
-
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/students" element={<StudentDetails />} />
