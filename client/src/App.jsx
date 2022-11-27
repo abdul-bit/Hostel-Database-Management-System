@@ -7,7 +7,6 @@ import { StudentsContextProvider } from "./context/StudentsContext";
 import EmployeeDetails from "./routes/EmployeeDetails";
 import Employee from "./routes/Employee";
 import Signup from "./routes/Signup";
-import fees from "./routes/fees";
 import Fees from "./routes/fees";
 import Aboutus from "./routes/aboutus";
 
